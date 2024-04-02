@@ -40,7 +40,9 @@ class HomeScreen extends StatelessWidget {
                         color: Color(0xFF4D60D1),
                         borderRadius: BorderRadius.circular(10.0)),
                     child: ElevatedButton(
-                        onPressed: null,
+                        onPressed: () {
+                          Navigator.pushNamed(context, 'history');
+                        },
                         child: Text(
                           'Booking History',
                           style: TextStyle(color: Colors.white),
@@ -49,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 150.0,
+                height: 100.0,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
